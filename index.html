@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miopia Cipher</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Miopia <span>Cipher</span></h1>
+            <p>Sistema de Transformacao de Texto em Camadas</p>
+        </header>
+
+        <div class="grid-panels">
+            <div class="panel-group">
+                <label for="inputText">Texto Original</label>
+                <textarea id="inputText" placeholder="Digite ou cole seu texto aqui..."></textarea>
+            </div>
+            <div class="panel-group">
+                <label for="outputText">Texto Cifrado / Decifrado</label>
+                <textarea id="outputText" placeholder="O resultado aparecera aqui..." readonly></textarea>
+            </div>
+        </div>
+
+        <div class="btn-group">
+            <button id="encryptBtn" type="button">Cifrar</button>
+            <button id="decryptBtn" type="button">Decifrar</button>
+        </div>
+
+        <div id="statusBox" class="status-box"></div>
+
+        <div class="examples-section">
+            <label>Exemplo rapido de teste:</label>
+            <div class="examples-list" id="examplesList"></div>
+        </div>
+    </div>
+
+    <footer>
+        boa sorte! 1402
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
