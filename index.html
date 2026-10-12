@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0b0c0a">
+    <meta name="color-scheme" content="dark">
+    <title>Miopia Cipher</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="grain" aria-hidden="true"></div>
+    <div class="lens" aria-hidden="true"></div>
+
+    <div class="page">
+
+        <header class="hero" id="hero">
+            <p class="eyebrow">cifra em camadas</p>
+            <h1 aria-label="Miopia">
+                <span style="--i:0" aria-hidden="true">M</span><span style="--i:1" aria-hidden="true">I</span><span style="--i:2" aria-hidden="true">O</span><span style="--i:3" aria-hidden="true">P</span><span style="--i:4" aria-hidden="true">I</span><span class="last" style="--i:5" aria-hidden="true">A</span>
+            </h1>
+            <p class="lede">Boa sorte...</p>
+        </header>
+
+        <main>
+            <div class="desk">
+                <section class="pane" aria-labelledby="lblIn">
+                    <div class="pane-head">
+                        <label id="lblIn" for="inputText">Entrada</label>
+                        <span class="count"><span id="inCount">0</span> caracteres</span>
+                    </div>
+                    <textarea id="inputText" spellcheck="false" placeholder="Digite ou cole aqui"></textarea>
+                    <div class="foot">
+                        <span class="foot-label">Exemplos</span>
+                        <div class="samples" id="samplesList"></div>
+                    </div>
+                </section>
+
+                <section class="pane pane-out" aria-labelledby="lblOut">
+                    <div class="pane-head">
+                        <label id="lblOut" for="outputText">Resultado</label>
+                        <span class="count"><span id="outCount">0</span> caracteres</span>
+                    </div>
+                    <textarea id="outputText" readonly spellcheck="false" placeholder="O resultado aparece aqui"></textarea>
+                    <div class="foot">
+                        <button id="copyBtn" class="link" type="button">Copiar</button>
+                        <button id="moveBtn" class="link" type="button">Usar como entrada</button>
+                        <button id="clearBtn" class="link" type="button">Limpar tudo</button>
+                    </div>
+                </section>
+            </div>
+
+            <div class="bar">
+                <div class="btns">
+                    <button id="encryptBtn" class="btn btn-main" type="button">Cifrar</button>
+                    <button id="decryptBtn" class="btn btn-ghost" type="button">Decifrar</button>
+                </div>
+                <div id="statusBox" class="status" role="status" aria-live="polite"></div>
+            </div>
+        </main>
+
+        <footer class="luck">
+            <span class="wish">boa sorte!</span>
+            <span class="num">1402</span>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
